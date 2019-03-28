@@ -1,0 +1,227 @@
+/* pages/topic/main.wxss */
+page{
+  border-top: 1rpx solid #eee;
+}
+.msg_menu{
+  display: flex;
+  position: relative;
+}
+.msg_menu::after{
+  content: '';
+  width: 750rpx;
+  border-bottom: 2rpx solid #F4F4F4; 
+  position: absolute;
+  bottom: -2rpx;
+}
+.msg_menu_list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin: 30rpx 0;
+}
+.msg_menu_icon{
+  width: 90rpx;
+  height: 90rpx;
+  margin: 10rpx auto;
+  border-radius: 50%;
+}
+.msg_menu_type{
+  font-size:32rpx;
+  text-align: center;
+  color:rgba(51,51,51,1);
+}
+
+.msg_kefu{
+  margin-left: 30rpx;
+  position: relative;
+}
+.msg_kefu::after{
+  content: '';
+  width: 750rpx;
+  border-bottom: 20rpx solid #F4F4F4; 
+  position: absolute;
+  bottom: -20rpx;
+  left: -30rpx;
+}
+.list_comm_btn{
+  width: 574rpx;
+  padding: 0;
+  color: #9B9B9B;
+  font-size: 28rpx;
+  text-align: left;
+  line-height: 40rpx;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2; 
+}
+
+.msg_list{
+  display: flex;
+  /* height: 140rpx; */
+  /* line-height: 140rpx; */
+  position: relative;
+}
+.msg_list_mask{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.msg_border{
+  border-bottom: 1rpx solid #eee;
+}
+.list_icon{
+  width: 90rpx;
+  height: 90rpx;
+  padding: 0;
+  margin: 25rpx 0 0 0;
+  border-radius: 50%;
+}
+.list_icon_btn{
+  width: 90rpx;
+  height: 115rpx;
+  padding: 0;
+  margin: 0;
+}
+.list_badge{
+  display: inline-block;
+  position: absolute;
+  left:54%;
+  top:4%;
+  width: 36rpx;
+  height:36rpx;
+  line-height: 36rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #fff;
+  background:rgba(244,53,48,1);
+  border-radius:18rpx;
+}
+.list_badge_l{
+  display: inline-block;
+  position: absolute;
+  left:54%;
+  top:4%;
+  min-width: 16rpx;
+  height:36rpx;
+  padding: 0 10rpx;
+  line-height: 36rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #fff;
+  background:rgba(244,53,48,1);
+  border-radius:18rpx;
+}
+.msg_main{
+  margin-top: 30rpx;
+  /* margin-left: 30rpx; */
+}
+.list_content{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  font-size:32rpx;
+  line-height:50rpx;
+  color: #333;
+}
+.list_user{
+  display: inline-block;
+  max-width: 322rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 32rpx;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.list_reply{
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-left: 10rpx;
+  padding: 0;
+  color: #999;
+  font-size: 32rpx;
+}
+.list_time{
+  position: absolute;
+  right: 30rpx;
+  color: #B2B2B2;
+  font-size: 24rpx;
+}
+.list_comm{
+  width: 574rpx;
+  padding-right: 30rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #9B9B9B;
+  /* overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; */
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2; 
+}
+.list_point{
+  width:20rpx;
+  height:20rpx;
+  border-radius: 50%;
+  background:rgba(244,53,48,1);
+  position: absolute;
+  top:25rpx;
+  left:70rpx;
+}
+.msg_tips{
+  margin: 20rpx auto;
+  font-size:24rpx;
+  color:rgba(153,153,153,1);
+  line-height:33rpx;
+  text-align: center;
+}
+.msg_main_none{
+  width:410rpx;
+  height:166rpx;
+  margin: 100rpx 170rpx;
+  padding-top: 100rpx;
+  padding-bottom: 200rpx;
+  font-size:26rpx;
+  text-align: center;
+  line-height: 70rpx;
+  color:rgba(153,153,153,1);
+}
+
+.img {
+  width: 220rpx;
+  height: 220rpx;
+  
+  /* margin-bottom: 10rpx; */
+}
+
+.comment_video{
+  /* height: 90rpx; */
+  /* padding-left: 30rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  padding-right: 20prx; */
+  padding: 30rpx;
+  /* margin-left: 90rpx; */
+  /* background: rgba(250,246,234,1); */
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+
+textarea {
+width:100%;
+height:200rpx;
+display:block;
+position:relative;
+}

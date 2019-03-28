@@ -1,0 +1,278 @@
+.header {
+  display: flex;
+  flex-direction:row
+}
+/* pages/cinema/main.wxss */
+page{
+  border-top: 1rpx solid #eee;
+}
+.cinema_header{
+  padding: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.header_tab{
+  width:330rpx;
+  height:140rpx;
+  font-size:36rpx;
+  font-weight: 500;
+  color:rgba(255,255,255,1);
+  line-height:140rpx;
+  text-align: center;
+  position: relative;
+}
+.header_bg{
+  width:330rpx;
+  height:140rpx;
+  vertical-align: baseline;
+}
+.header_mask{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background:rgba(117,124,128,.3);
+}
+.header_content{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_point{
+  font-size: 26rpx;
+  font-weight: 500;
+  line-height: 140rpx;
+}
+.cinema_tips{
+  height:60rpx;
+  padding-left: 30rpx;
+  background:rgba(250,246,234,1);
+  font-size:24rpx;
+  color:rgba(102,102,102,1);
+  line-height:60rpx;
+}
+.cinema_list{
+  border-bottom: 20rpx #F4F4F4 solid;
+}
+.cinema_avatar{
+  width:70rpx;
+  height:70rpx;
+  border-radius: 50%;
+}
+.comment_header{
+  display: flex;
+  position: relative;
+}
+.comment_title{
+  margin-left: 20rpx;
+  font-size:26rpx;
+  color:rgba(51,51,51,1);
+}
+.comment_title_tips{
+  color: #999;
+  font-size: 24rpx;
+}
+.comment_score{
+  font-size:24rpx;
+  color:rgba(153,153,153,1);
+  line-height:33px;
+}
+.comment_star{
+  display: inline-block;
+  width: 24rpx;
+  height: 24rpx;
+  margin-right: 5rpx;
+  margin-bottom: 6rpx;
+}
+.comment_content{
+  width: 600rpx;
+  overflow: hidden;
+  word-break: break-all;
+  position: relative;
+  font-size:30rpx;
+  color:rgba(51,51,51,1);
+  line-height:42rpx;
+}
+.comment_content .tips{
+  color: #CBA950;
+  background-color: #fff;
+}
+/* .comment_content .tips{
+  position: absolute;
+  bottom: 0;
+  right: 2rpx;
+  z-index: 10;
+  color: #CBA950;
+  background-color: #fff;
+}
+.packup .content{
+  max-height: 166rpx;
+}
+.packup:before{
+  display: block;
+  content: attr(data-content);
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  max-height: 120rpx;
+  width: 100%;
+  overflow: hidden;
+  color: #000;
+  background-color: #fff;
+}
+.packup:after{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-line-clamp: 4;
+  content: attr(data-content);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-indent: -150rpx;
+  padding-right: 50rpx;
+  color: #000;
+  background-color: #fff;
+}*/
+
+.comment_main{
+  padding: 30rpx;
+}
+.content_header{
+  margin-bottom: 20rpx;
+  display: flex;
+  position: relative;
+}
+.comment_body{
+  margin-left: 90rpx;
+  padding-bottom: 30rpx;
+  position: relative;
+}
+.comment_tap{
+  position: absolute;
+  top: 20rpx;
+  right: 30rpx;
+  z-index: 10;
+  width:100rpx;
+  height:60rpx;
+}
+.comment_video{
+  /* height: 90rpx; */
+  /* padding-left: 30rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  padding-right: 20prx; */
+  padding: 30rpx;
+  margin-left: 90rpx;
+  background: rgba(250,246,234,1);
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+.video_cover{
+  /* width:160rpx; */
+  /* height:90rpx; */
+  margin-right: 3rpx;
+}
+.video_title{
+  margin-left: 20rpx;
+  font-size:30rpx;
+  color:rgba(51,51,51,1);
+}
+.video_title_long{
+  width: 370rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.video_title_tips{
+  color: #666;
+  font-size: 26rpx;
+}
+.cinema_footer{
+  font-size:24rpx;
+  color:rgba(153,153,153,1);
+  line-height:33px;
+  text-align: center;
+  background-color: #F4F4F4;
+}
+
+.comment_footer{
+  display: flex;
+  padding: 30rpx 0 0 90rpx;
+  font-size: 26rpx;
+}
+.comment_btn{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.btn_icon{
+  width: 38rpx;
+  height: 38rpx;
+  margin-right: 20rpx;
+}
+
+.guide_modal{
+  position: relative;
+  width: 560rpx;
+  height: 100%;
+  margin: 0 auto;
+}
+.guide_text{
+  font-size:28rpx;
+  color:rgba(255,255,255,1);
+  line-height:40rpx;
+  margin: 40rpx auto;
+}
+.guide_btn{
+  width:330rpx;
+  height:70rpx;
+  margin: auto;
+  background:rgba(203,169,80,1);
+  font-size:32rpx;
+  color:rgba(255,255,255,1);
+  line-height:70rpx;
+  text-align: center;
+}
+.guide_bottom{
+  position: absolute;
+  bottom: 10rpx;
+  left: 50rpx;
+}
+.guide_bottom image{
+  width:462rpx;
+  height:154rpx;
+  position: absolute;
+  bottom: 0;
+}
+.guide_bottom .guide_tips{
+  width:402rpx;
+  height:94rpx;
+  padding: 30rpx;
+  position: absolute;
+  bottom: 0;
+  font-size:28rpx;
+  color:rgba(102,102,102,1);
+  line-height:43rpx;
+  text-align: center;
+}
+
+.img {
+  width: 180rpx;
+  height: 180rpx;
+  
+  /* margin-bottom: 10rpx; */
+}

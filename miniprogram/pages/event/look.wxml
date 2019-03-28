@@ -1,0 +1,43 @@
+<!-- <view class='container' wx:for="{{event_list}}">
+  <view style='flex:1' class='header'>
+    <view style='flex:1'>
+      <image src="{{item.avatar}}" style='width: 80rpx;height: 80rpx;border-radius: 50%;overflow: hidden;'></image>
+    </view>
+    <view>{{item.nickname}}</view>
+  </view>
+    <view style='flex:3'>
+      <view>content:{{item.content}}</view>
+      <view wx:for="{{item.img_id}}">
+        <image src='{{item}}'></image>
+      </view>
+    </view>
+</view> -->
+
+
+<!--pages/cinema/main.wxml-->
+<view class='cinema_list' wx:for="{{event_list}}" wx:key>
+  <view class='comment_main'>
+    <view class='comment_header'>
+      <image class='cinema_avatar' src='{{item.avatar}}'></image>
+       <view class='comment_title'>
+        <view>{{item.nickname}}</view>
+      </view>
+    </view>
+    <view class='comment_body'>
+      <!-- <view class='comment_content'>
+        {{item.content}}
+      </view> -->
+      <view class='comment_content' data-content="{{item.content}}">
+        <view>
+          <text>{{item.content}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='comment_video' bindtap="jumpToVideo">
+      <!-- <view class='video_cover' wx:for="{{item.img_id}}"> -->
+        <image style='margin-right:3rpx' wx:for="{{item.img_id}}" wx:for-item="dImg" src='{{dImg}}' class='img'  bindtap="imgYu" data-list="{{item.img_id}}" data-src="{{dImg}}"></image>
+      <!-- </view> -->
+    </view>
+  </view>
+</view>
+<view wx:if="{{isAll}}" class='cinema_footer'>厉害了，竟然看完了</view>

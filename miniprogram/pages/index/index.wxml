@@ -1,0 +1,28 @@
+<view class="container-fluid">
+    <view class="title" >
+        <view style='flex:7'>欢迎你，<open-data type="userNickName"></open-data></view>
+        <view class="avatar" style='flex:1'>
+            <open-data type="userAvatarUrl"></open-data>
+        </view>
+    </view>
+    <view class="demo5">
+        <calendar
+         weeks-type="cn"          
+        cell-size="30" 
+        next="{{true}}" prev="{{true}}" show-more-days="{{false}}"
+        calendar-style="demo5-calendar" 
+        header-style="demo5-header" 
+        board-style="demo5-board" 
+        days-color="{{demo5_days_style}}" 
+        binddayClick="dayClick"
+        bindnextMonth="next"
+        bindprevMonth="prev"
+        binddateChange="dateChange"
+        lunar="true"
+        />
+    </view>
+    <view class='button-group' wx:if='{{isShow}}'>
+      <view style='flex:1'><button class='button' open-type="getUserInfo" bindtap='look_event'>追忆时光</button></view>
+      <view style='flex:1'><button class='button' open-type="getUserInfo"  bindgetuserinfo="onGotUserInfo" bindtap='add_event'>记录年轮</button></view>
+    </view>
+</view>

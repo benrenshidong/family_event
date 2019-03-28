@@ -1,0 +1,57 @@
+/* pages/demo/index.wxss */
+page {
+    background-color: #efefef;
+}
+
+.demo5 {
+    padding: 15px;
+}
+
+.demo5-calendar {
+    background-color: white;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+
+.demo5-header {
+    font-size: large;
+    color: #59518d;    
+}
+
+.demo5-board {
+    color: #c7cbe2;
+    font-weight: bold;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    /* display: block; */
+}
+
+.avatar {
+  width:80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  /* float: right; */
+  margin-right: 20px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.button {
+ background-color: white;
+ border-radius: 15px;
+ color: #a18ada;
+ font-weight: bold;
+}

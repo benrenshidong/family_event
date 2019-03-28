@@ -1,0 +1,24 @@
+<!-- pages/event/add.wxml -->
+<view class='msg_menu'>
+  <view class='msg_menu_list' bindtap='doUpload' style='border-right: 1rpx solid #eee;'>
+    <image class='msg_menu_icon' src='../../images/zan.png'></image>
+    <view class='msg_menu_type'>选择照片</view>
+  </view>
+</view>
+<view class='msg_kefu'>
+  <view class="msg_list" wx:if="{{imgFilePath.length>0}}">
+     <view class='comment_video' bindtap="jumpToVideo">
+      <view>
+        <image wx:for="{{imgFilePath}}" src='{{item}}' class='img'></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="msg_main">
+  <view class="msg_list msg_border">
+     <textarea placeholder="    这一刻的想法..." cursor-spacing='50' class="on_focus"  maxlength='300' value="{{content}}"  bindfocus="focusHandle" bindinput="inputHandle"/>
+  </view>
+    <view style='margin-top:30rpx'>
+      <button style='color:#a18ada;font-weight:bold' bindtap='onAdd'>提交</button>
+    </view>
+</view>  
